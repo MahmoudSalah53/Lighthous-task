@@ -1,6 +1,6 @@
 # Lighthouse Task
 
-This project was built for **The Lighthouse Centre Laravel Developer Task**.
+This project was created as part of a technical task for **The Lighthouse Centre**.
 
 ---
 
@@ -8,66 +8,82 @@ This project was built for **The Lighthouse Centre Laravel Developer Task**.
 
 Follow the steps below to run the project locally:
 
-### 1. Clone the Repository
+### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/lighthouse-task.git
-cd lighthouse-task
+git clone https://github.com/MahmoudSalah53/Lighthous-task.git
 ```
 
-### 2. Install PHP Dependencies
+### 2️⃣ Navigate to the project directory
 
-Make sure you have **Composer** installed, then run:
+```bash
+cd Lighthous-task
+```
+
+### 3️⃣ Install dependencies
 
 ```bash
 composer install
 ```
 
-### 3. Install Node.js Dependencies
-
-Make sure you have **Node.js** and **npm** installed, then run:
-
-```bash
-npm install
-```
-
-### 4. Create Environment File
-
-Duplicate the example environment file:
+### 4️⃣ Copy the environment file
 
 ```bash
 cp .env.example .env
 ```
 
-Then, open `.env` and update the following:
-
-* Database credentials (`DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`)
-* Mail credentials (Gmail SMTP or any other mail service)
-
-### 5. Generate App Key
+### 5️⃣ Generate application key
 
 ```bash
 php artisan key:generate
 ```
 
-### 6. Run Migrations
+### 6️⃣ Set up your database
+
+Open the `.env` file and configure your database credentials, for example:
+
+```
+DB_DATABASE=lighthouse-task
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Then run:
 
 ```bash
 php artisan migrate
 ```
 
-### 7. Start Laravel Development Server
+### 7️⃣ Install frontend dependencies
+
+```bash
+npm install
+npm run dev
+```
+
+### 8️⃣ Run the application
 
 ```bash
 php artisan serve
 ```
 
-### 8. Run Frontend Assets
+---
 
-In another terminal, run:
+## 🧠 Notes
 
-```bash
-npm run dev
-```
+* The first user to register will automatically be assigned the **admin** role.
+* The admin can view all submissions in the “Submissions” page.
 
+---
 
+## ✅ Requirements
+
+* PHP 8.2+
+* Composer
+* Node.js & NPM
+* MySQL
+
+---
+
+**GitHub Repository:**
+[https://github.com/MahmoudSalah53/Lighthous-task.git](https://github.com/MahmoudSalah53/Lighthous-task.git)
